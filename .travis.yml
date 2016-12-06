@@ -26,7 +26,7 @@ notifications:
       - "%{elapsed_time} : %{duration}"
       - "%{message}"
     rooms:
-      secure: NseuBf+nDfigQrfcpOyyQor4928/D4i8zWK8OnJAWYxNYHKcmojbZcL+uAfDeJm2YkQGba1A92XZTEBx/nVUluHNVnexJP7309Rp0ql1h/kO1AC4iO1gZseUdAA3R8uDMXSuOWRhBgP8udb5Ys/qlN/feyjtvn4rTA0L1EKIPPc=
+      secure: I2SleXB3iT5wN9JRL7/eYF9KtlIdHqWQIXv6aONAKZTlDz3GFarLbjl7lXG/JuMrZfu3gfQb4WfdKk/a0glvo48UTgkQlYBvF4E5c6XdSE3PM8ncTHT+xlxoXLaE9YaGAPsz9L+p3lfCDb/O2kyzvIydCnntAjkwLmAQtoZXtFs=
     on_success: always
     on_failure: always
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
