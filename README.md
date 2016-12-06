@@ -1,4 +1,4 @@
-# Role Name
+# primogen
 
 [![License](https://img.shields.io/badge/license-New%20BSD-blue.svg?style=flat)](https://raw.githubusercontent.com/ansiblebit/primogen/master/LICENSE)
 [![Build Status](https://travis-ci.org/ansiblebit/primogen.svg?branch=master)](https://travis-ci.org/ansiblebit/primogen)
@@ -21,6 +21,7 @@
 
 A brief description of the role goes here.
 
+
 ## Tests
 
 | Family | Distribution | Version | Test Status |
@@ -36,13 +37,15 @@ A brief description of the role goes here.
 | RedHat | Fedora  | 20      | [![x86](http://img.shields.io/badge/x86-n/a-cccccc.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-n/a-cccccc.svg?style=flat)](#) |
 | RedHat | Fedora  | 21      | [![x86](http://img.shields.io/badge/x86-n/a-cccccc.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-n/a-cccccc.svg?style=flat)](#) |
 
+
 ## Requirements
 
 Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here.
 For instance, if the role uses the EC2 module,
 it may be a good idea to mention in this section that the boto package is required.
 
-- ansible >= 1.7.2
+- ansible >= 2.0
+
 
 ## Role Variables
 
@@ -53,11 +56,15 @@ any variables that can/should be set via parameters to the role.
 Any variables that are read from other roles and/or
 the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
 
+- **debug**: flag to run debug tasks.
+
+
 ## Dependencies
 
 A list of other roles hosted on Galaxy should go here,
 plus any details in regards to parameters that may need to be set for other roles
 or variables that are used from other roles.
+
 
 ## Playbooks
 
@@ -113,14 +120,3 @@ $ vagrant ssh trusty64.vagrant.dev
 ```
 
 
-## Links
-
-
-## License
-
-BSD
-
-## Author Information
-
-An optional section for the role authors to include contact information or
-a website (HTML is not allowed).

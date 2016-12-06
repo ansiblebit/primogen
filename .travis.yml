@@ -17,7 +17,7 @@ script:
   - tox
 
 notifications:
-    webhooks: https://galaxy.ansible.com/api/v1/notifications/
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/
 
 before_cache:
   - rm -f ${HOME}/.cache/pip/log/debug.log
