@@ -26,7 +26,7 @@ notifications:
       - "%{elapsed_time} : %{duration}"
       - "%{message}"
     rooms:
-      - steenzout:${SLACK_API_TOKEN}#ansiblebit-primogen
+      secure: NnbcOuvDwjTK1orHxC/LyRhuRZghPt8kliCGBpvBh4exKrr8XjFMoStAOKwu/9KzKDeKzufDTVP4QGNYVp7aQZnTQwJapNTShA47ffAKVAyw9qjGzmOofp3yCo7G9qvAzfeL+E7+4ssnH6Kp1wq1GT79deevl15IjAkzYiRTlUk=
     on_success: always
     on_failure: always
 
