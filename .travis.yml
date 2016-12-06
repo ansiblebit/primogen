@@ -17,12 +17,23 @@ script:
   - tox
 
 notifications:
+  email: false
+  slack:
+    template:
+      - "%{repository_name}@%{branch} %{commit} : [%{build_number}] %{result} "
+      - "%{build_url}"
+      - "'%{commit_subject}' by %{author}"
+      - "%{elapsed_time} : %{duration}"
+      - "%{message}"
+    rooms:
+      secure: NfmAKh32+3VjdHPcckTb2WKFLHmDeDXg18RCFTNquntOkrE5WKvwdUgH+5mtgIw6sP06OuyRgCBmrOj4zNAvbNU0ltTWDg974TREluQ7LCraIPVX07arY3TjvCjZvp9dtdbSm5G2GiVIEb2Eq2PZDBXYh+yYRXJO7hDFfy3tRoI=
+    on_success: always
+    on_failure: always
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
 
 before_cache:
-  - rm -f ${HOME}/.cache/pip/log/debug.log
+  - find ${HOME}/.pip -name log -o -name __pycache__ -type d | xargs -I {} rm -rf {}
 
 cache:
   directories:
-    - ${HOME}/.cache/pip
-
+    - "${HOME}/.cache/pip"
