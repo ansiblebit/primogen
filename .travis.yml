@@ -26,10 +26,9 @@ notifications:
       - "%{elapsed_time} : %{duration}"
       - "%{message}"
     rooms:
-      secure: "Yycr1/5o9qOVEK4a/zZvvT70b/lwQwBMGJIXz+rGDt7sF5x+hKIqJMQ1KqW45mNC6NC4hPEFeGn8EzlnYGeuwDQtVGNteTNm+tOSDmsxoG19vb8hHhDwsvGgOum8YS04DWiG/ZV9Lv7K7WMFWxJSLDlx5uPDC33mw/ykUXT5ChU="
+      secure: "GyH8OtSZzJvliKXfWpzLM1GzcfvDBgqJW61OYE+3/I8HIU76w3rH9Zm5ciu7Nc6VIk94oFwIMlaj3gwi3B8vhhrAZnjDoLocsT7/80a5keidQ8tKeWQZvFZx4BSxpy0ZBvI7S1RwYk3dyEn7ddu98OmKsf1uck6ZIrVZ5zHrieI="
     on_success: always
     on_failure: always
-  webhooks: https://galaxy.ansible.com/api/v1/notifications/
 
 before_cache:
   - rm -f ${HOME}/.cache/pip/log/debug.log
