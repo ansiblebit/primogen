@@ -2,6 +2,12 @@
 # file: primogen/tests/boxes.yml
 #
 
+provider:
+  virtualbox:
+    memory: 1024
+    cpus: 1
+
+
 vagrant:
 
 
@@ -14,11 +20,6 @@ vagrant:
       name: private_network
       ip: 192.168.121.1
 
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
-
   centos66-64.vagrant.dev:
     enabled: false
     box: hansode/centos-6.6-x86_64
@@ -26,22 +27,12 @@ vagrant:
       name: private_network
       ip: 192.168.121.2
 
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
-
   centos7-64.vagrant.dev:
     enabled: false
     box: relativkreativ/centos-7-minimal
     network:
       name: private_network
       ip: 192.168.121.3
-
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
 
 
   # Debian
@@ -80,22 +71,12 @@ vagrant:
       name: private_network
       ip: 192.168.123.1
 
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
-
   fedora20-64.vagrant.dev:
     enabled: false
     box: hansode/fedora-20-x86_64
     network:
       name: private_network
       ip: 192.168.123.2
-
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
 
   fedora21-32.vagrant.dev:
     enabled: false
@@ -104,22 +85,12 @@ vagrant:
       name: private_network
       ip: 192.168.123.3
 
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
-
   fedora21-64.vagrant.dev:
     enabled: false
     box: hansode/fedora-21-x86_64
     network:
       name: private_network
       ip: 192.168.123.4
-
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
 
   fedora23-atomic.vagrant.dev:
     enabled: false
@@ -128,11 +99,6 @@ vagrant:
       name: private_network
       ip: 192.168.123.5
 
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
-
   fedora23-cloud.vagrant.dev:
     enabled: false
     box: fedora/23-cloud-base
@@ -140,10 +106,22 @@ vagrant:
       name: private_network
       ip: 192.168.123.6
 
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
+
+  # OpenSUSE
+
+  leap64.vagrant.dev:
+    enabled: false
+    box: opensuse/openSUSE-42.1-x86_64
+    network:
+      name: private_network
+      ip: 192.168.125.2
+
+  tumbleweed64.vagrant.dev:
+    enabled: true
+    box: opensuse/openSUSE-Tumbleweed-x86_64
+    network:
+      name: private_network
+      ip: 192.168.125.4
 
 
   # Ubuntu
@@ -155,22 +133,12 @@ vagrant:
       name: private_network
       ip: 192.168.124.1
 
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
-
   precise64.vagrant.dev:
     enabled: false
     box: ubuntu/precise64
     network:
       name: private_network
       ip: 192.168.124.2
-
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
 
   trusty32.vagrant.dev:
     enabled: false
@@ -179,22 +147,12 @@ vagrant:
       name: private_network
       ip: 192.168.124.3
 
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
-
   trusty64.vagrant.dev:
     enabled: false
     box: ubuntu/trusty64
     network:
       name: private_network
       ip: 192.168.124.4
-
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
 
   vivid32.vagrant.dev:
     enabled: false
@@ -203,22 +161,12 @@ vagrant:
       name: private_network
       ip: 192.168.124.5
 
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
-
   vivid64.vagrant.dev:
     enabled: false
     box: ubuntu/vivid64
     network:
       name: private_network
       ip: 192.168.124.6
-
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
 
   wily64.vagrant.dev:
     enabled: true
@@ -227,11 +175,6 @@ vagrant:
       name: private_network
       ip: 192.168.124.7
 
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
-
   xenial64.vagrant.dev:
     enabled: true
     box: ubuntu/xenial64
@@ -239,19 +182,9 @@ vagrant:
       name: private_network
       ip: 192.168.124.8
 
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
-
   yakkety64.vagrant.dev:
     enabled: true
     box: ubuntu/yakkety64
     network:
       name: private_network
       ip: 192.168.124.9
-
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
