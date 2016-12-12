@@ -26,13 +26,13 @@ notifications:
       - "%{elapsed_time} : %{duration}"
       - "%{message}"
     rooms:
-      secure: NfmAKh32+3VjdHPcckTb2WKFLHmDeDXg18RCFTNquntOkrE5WKvwdUgH+5mtgIw6sP06OuyRgCBmrOj4zNAvbNU0ltTWDg974TREluQ7LCraIPVX07arY3TjvCjZvp9dtdbSm5G2GiVIEb2Eq2PZDBXYh+yYRXJO7hDFfy3tRoI=
+      secure: NnbcOuvDwjTK1orHxC/LyRhuRZghPt8kliCGBpvBh4exKrr8XjFMoStAOKwu/9KzKDeKzufDTVP4QGNYVp7aQZnTQwJapNTShA47ffAKVAyw9qjGzmOofp3yCo7G9qvAzfeL+E7+4ssnH6Kp1wq1GT79deevl15IjAkzYiRTlUk=
     on_success: always
     on_failure: always
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
 
 before_cache:
-  - find ${HOME}/.pip -name log -o -name __pycache__ -type d | xargs -I {} rm -rf {}
+  - rm -f ${HOME}/.cache/pip/log/debug.log
 
 cache:
   directories:
