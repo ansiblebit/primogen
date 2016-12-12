@@ -117,7 +117,7 @@ vagrant:
       ip: 192.168.125.2
 
   tumbleweed64.vagrant.dev:
-    enabled: true
+    enabled: false
     box: opensuse/openSUSE-Tumbleweed-x86_64
     network:
       name: private_network
