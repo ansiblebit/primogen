@@ -4,6 +4,7 @@ require 'yaml'
 
 PLAYBOOK = 'test.yml'
 CONFIGURATION_FILE = 'boxes.yml'
+ROLE_NAME = "#{File.expand_path("..").split("/")[-1]}"
 
 Vagrant.configure('2') do |config|
 
@@ -32,6 +33,7 @@ Vagrant.configure('2') do |config|
       customize_args = [ "modifyvm", :id ]
       vagrant_environment['provider']['virtualbox'].collect { |k, v| customize_args |= ["--#{k}", v.to_s] }
       host.vm.provider 'virtualbox' do |vb|
+        vb.name = "#{ROLE_NAME}_#{box_name}"
         vb.customize customize_args
       end
 
