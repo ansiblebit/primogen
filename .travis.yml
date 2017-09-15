@@ -36,7 +36,7 @@ notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
 
 before_cache:
-  - rm -f ${HOME}/.cache/pip/log/debug.log
+  - "find ${HOME}/.pip -name log -o -name __pycache__ -type d | xargs -I {} rm -rf {}"
 
 cache:
   directories:
