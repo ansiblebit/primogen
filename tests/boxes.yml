@@ -44,11 +44,6 @@ vagrant:
       name: private_network
       ip: 192.168.122.1
 
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
-
   wheezy64.vagrant.dev:
     enabled: false
     box: debian/wheezy64
@@ -56,10 +51,12 @@ vagrant:
       name: private_network
       ip: 192.168.122.2
 
-    provider:
-      virtualbox:
-        memory: 1024
-        cpus: 1
+  stretch64.vagrant.dev:
+    enabled: false
+    box: debian/stretch64
+    network:
+      name: private_network
+      ip: 192.168.122.3
 
 
   # Fedora
@@ -188,3 +185,24 @@ vagrant:
     network:
       name: private_network
       ip: 192.168.124.9
+
+  artful64.vagrant.dev:
+    enabled: true
+    box: ubuntu/artful64
+    network:
+      name: private_network
+      ip: 192.168.124.10
+
+  bionic64.vagrant.dev:
+    enabled: true
+    box: ubuntu/bionic64
+    network:
+      name: private_network
+      ip: 192.168.124.11
+
+  cosmic64.vagrant.dev:
+    enabled: true
+    box: ubuntu/cosmic64
+    network:
+      name: private_network
+      ip: 192.168.124.12
