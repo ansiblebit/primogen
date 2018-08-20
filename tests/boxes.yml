@@ -195,3 +195,10 @@ vagrant:
     network:
       name: private_network
       ip: 192.168.124.10
+
+  cosmic64.vagrant.dev:
+    enabled: false
+    box: ubuntu/cosmic64
+    network:
+      name: private_network
+      ip: 192.168.124.10
