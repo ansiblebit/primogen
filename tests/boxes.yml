@@ -188,3 +188,10 @@ vagrant:
     network:
       name: private_network
       ip: 192.168.124.9
+
+  bionic64.vagrant.dev:
+    enabled: false
+    box: ubuntu/bionic64
+    network:
+      name: private_network
+      ip: 192.168.124.10
