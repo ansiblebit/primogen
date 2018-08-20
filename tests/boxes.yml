@@ -189,16 +189,23 @@ vagrant:
       name: private_network
       ip: 192.168.124.9
 
-  bionic64.vagrant.dev:
-    enabled: false
-    box: ubuntu/bionic64
+  artful64.vagrant.dev:
+    enabled: true
+    box: ubuntu/artful64
     network:
       name: private_network
       ip: 192.168.124.10
 
+  bionic64.vagrant.dev:
+    enabled: true
+    box: ubuntu/bionic64
+    network:
+      name: private_network
+      ip: 192.168.124.11
+
   cosmic64.vagrant.dev:
-    enabled: false
+    enabled: true
     box: ubuntu/cosmic64
     network:
       name: private_network
-      ip: 192.168.124.10
+      ip: 192.168.124.12
