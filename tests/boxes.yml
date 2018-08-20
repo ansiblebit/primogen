@@ -29,7 +29,7 @@ vagrant:
 
   centos7-64.vagrant.dev:
     enabled: false
-    box: relativkreativ/centos-7-minimal
+    box: centos/7
     network:
       name: private_network
       ip: 192.168.121.3
