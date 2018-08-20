@@ -61,6 +61,13 @@ vagrant:
         memory: 1024
         cpus: 1
 
+  stretch64.vagrant.dev:
+    enabled: false
+    box: debian/stretch64
+    network:
+      name: private_network
+      ip: 192.168.122.3
+
 
   # Fedora
 
