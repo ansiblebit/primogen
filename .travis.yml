@@ -3,6 +3,14 @@ sudo: yes
 
 matrix:
   include:
+    - python: 3.6
+      env: TOXENV=py36-ansible27
+    - python: 3.6
+      env: TOXENV=py36-ansible26
+    - python: 3.6
+      env: TOXENV=py36-ansible25
+    - python: 2.7
+      env: TOXENV=py27-ansible24
     - python: 2.7
       env: TOXENV=py27-ansible23
     - python: 2.7
@@ -11,8 +19,6 @@ matrix:
       env: TOXENV=py27-ansible21
     - python: 2.7
       env: TOXENV=py27-ansible20
-    - python: 2.7
-      env: TOXENV=py27-ansible19
 
 install:
   - pip install tox
